@@ -27,7 +27,6 @@ current_time = start_time
 
 while current_time <= end_time:
     try:
-        formatted_time = current_time.strftime("%H:%M")  # Форматирование времени
         busy_start_time = datetime.strptime(busy[counter]['start'], '%H:%M').time()
         current_time_time = current_time.time()
 
